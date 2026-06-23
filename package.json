@@ -1,0 +1,24 @@
+{
+  "name": "api-automation-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Projeto  automacao de testes com Cypress",
+  "scripts": {
+    "test": "cypress run",
+    "test:report": "cypress run --reporter mochawesome --reporter-options reportDir=cypress/reports/mochawesome,overwrite=false,html=false,json=true",
+    "report:merge": "mochawesome-merge cypress/reports/mochawesome/*.json > cypress/reports/mochawesome.json",
+    "report:html": "marge cypress/reports/mochawesome.json --reportDir cypress/reports/html --reportFilename index",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^15.0.0",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.1",
+    "mochawesome-report-generator": "^6.3.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
