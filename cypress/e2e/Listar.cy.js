@@ -1,5 +1,5 @@
 import { massaDeDados } from '../fixtures/massaDados'
-import { criarUsuario, deletarUsuario } from '../support/usuariosHelper'
+import { criarUsuario, deletarUsuario } from '../support/helper'
 
 describe('Listagem de usuarios', () => {
   it('lista usuarios cadastrados', () => {
