@@ -8,7 +8,7 @@
 
 cd api
 npm install
-npm test
+
 
 ## Cenarios cobertos
 
@@ -21,3 +21,12 @@ npm test
 ## Observação
 
 Os cenarios são feitos de forma que cada a cada execução seja criada uma massa de dados, em seguida seja feita a execução do cenario proposto e por fim a exclusão do mesmo. 
+
+## Executar
+
+- npm test
+
+## Gerar relatorio 
+- npm run test:report
+- npm run report:merge
+- npm run report:html
