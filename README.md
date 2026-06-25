@@ -6,7 +6,6 @@
 
 # Instalar e executar
 
-cd <repositorio>
 npm install
 
 
